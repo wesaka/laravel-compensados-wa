@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import '..../css/app.css';
-import { Switch, Route, Router } from 'react-router-dom';
+import '../../css/app.css';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import {createBrowserHistory} from "history";
 
 import ReactGA from 'react-ga';
@@ -30,7 +30,7 @@ history.listen(location => {
 class Main extends Component {
     render() {
         return (
-            <Router history={history}>
+            <BrowserRouter history={history}>
                 <div className="app">
                     <HeaderComponent/>
                     <Switch>
@@ -41,7 +41,7 @@ class Main extends Component {
                     </Switch>
                     <FooterComponent/>
                 </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 }

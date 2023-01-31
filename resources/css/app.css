@@ -1,0 +1,16 @@
+.app {
+    text-align: center;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6em;
+}
+
+a {
+    text-decoration: none;
+}

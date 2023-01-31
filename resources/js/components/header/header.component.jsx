@@ -64,7 +64,11 @@ class HeaderComponent extends Component {
             <div>
                 <HeaderContainer topLen={this.state.topLen}>
                 <GreenHeader>
-                    <TextoContato>{'Telefone: '}{linkPhone(telefone)}{' | Vendas '}<WhatsappButton icon={faWhatsapp}/>{linkPhone(celularVendedor)}{this.state.hideNav ? '' : ` | ${email}`}</TextoContato>
+                    <TextoContato>
+                        {'Telefone: '}{linkPhone(telefone)}{' | Vendas '}
+                        <WhatsappButton icon={faWhatsapp}/>
+                        {linkPhone(celularVendedor)}{this.state.hideNav ? '' : ` | ${email}`}
+                    </TextoContato>
                     <FacebookButton onClick={this.handleFacebookClick} icon={faFacebook}/>
                 </GreenHeader>
                 <NavigationHeader id='navigationheader'>
